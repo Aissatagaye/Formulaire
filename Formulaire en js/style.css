@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: popins;
+}
+/*section{
+  height: 140vh;
+  width: 100%;
+  background-color: rgb(39, 25, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}*/
+.container{
+  width: 90%;
+  max-width: 500px;
+  margin:0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000057;
+  background-color: white;
+  border-radius: 8px;
+
+} 
+.form{
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form input,
+.form textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.986);
+  margin-top: 5px;
+}
+textarea{
+  resize: vertical;
+}
+button[type="submit"]{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: 'popins';
+  color: rgb(39, 25, 235);
+  background-color: rgb(227, 233, 238);
+  text-align: center;
+  cursor: pointer;
+  transition: .3s ease background-color;
+  margin-top: 10px;
+}
+button[type="submit"]:hover{
+  background-color: rgb(110, 137, 160);
+}
+#status{
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+}
+#status.success{
+  background-color: rgb(62, 70, 175);
+  color: green;
+  animation: status 4s ease  forwards;
+}
+#status.error{
+  background-color: rgb(62, 70, 175);
+  color: rgb(143, 21, 21);
+  animation: status 4s ease  forwards;
+}
+
+@keyframes status{
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
+}

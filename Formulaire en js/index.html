@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Entrer vos cordonnées</h1>
+        <section>
+            <div class="container">
+                <form action="https://formspree.io/f/mayapgbr" id="test-form" method="POST" target="_blank">
+    
+                    <div class="form">
+                        <label for="Prénom">Prénom</label>
+                        <input type="text" id="Prénom" name="Prénom">
+                    </div>
+    
+                    <div class="form">
+                        <label for="Nom">Nom</label>
+                        <input type="text" id="Nom" name="Nom">
+                    </div>
+    
+
+                    <div class="form">
+                        <label for="Adresse">Adresse</label>
+                        <input type="text" id="Adresse" name="Adresse">
+                    </div>
+                    <div class="form">
+                        <label for="Age">Age</label>
+                        <input type="text" id="Age" name="Age">
+                    </div>
+                    <div class="form">
+                        <label for="Téléphone">Téléphone</label>
+                        <input type="tel" id="Téléphone" name="Téléphone">
+                    </div>
+    
+                    <div class="form">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="10" maxlength="200"></textarea>
+                    </div>
+    
+                    <button type="submit" id="form-submit">Envoyer</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
+    
+    </div>
+   <script src="./index.js"></script>
+</body>
+</html>
